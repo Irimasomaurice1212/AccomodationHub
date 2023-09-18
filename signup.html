@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Accommodation</title>
+</head>
+<body style="background-color: yellow; margin: 0; padding: 0; font-family: Arial, sans-serif;">
+
+  <header style="background-color: green; color: white; text-align: center; padding: 10px;">
+    <h2 id="logo" style="color: red; font-weight: bold;">Kigali accommodation center</h2>
+    <div>
+      <a href="home.html">HOME</a> |
+      <a href="NEWS.html">NEWS</a> |
+      <a href="ABOUTUS.html">ABOUT US</a> |
+      <a href="SIGNUP.html">SIGN UP</a> |
+      <a href="CONTACTUS.HTML">CONTACT US</a>
+    </div>
+  </header>
+
+  <div style="background-color: green; color: white; padding: 20px;">
+    <h2>Create an Account</h2>
+    <form action="signup.php" method="POST">
+      <label for="fname">Enter first name:</label><br>
+      <input type="text" id="fname" name="fname" style="background-color: white;"><br>
+
+      <label for="lname">Enter last name:</label><br>
+      <input type="text" id="lname" name="lname" style="background-color: white;"><br>
+
+      <label for="phone">Enter phone number:</label><br>
+      <input type="text" id="phone" name="phone" style="background-color: white;"><br>
+
+      <label for="country">Country:</label><br>
+      <select id="country" name="country" style="background-color: white;">
+        <option value="Rwanda" selected>Rwanda</option>
+        <option value="country1">Country 1</option>
+        <option value="country2">Country 2</option>
+      </select><br>
+
+      <label for="password">Create password:</label><br>
+      <input type="password" id="password" name="password" style="background-color: white;"><br>
+
+      <label for="confirm_password">Confirm password:</label><br>
+      <input type="password" id="confirm_password" name="confirm_password" style="background-color: white;"><br>
+
+      <button type="submit" style="background-color: #ff4500; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; font-weight: bold;">Submit</button>
+    </form>
+  </div>
+
+  <div style="background-color: green; color: white; text-align: center; padding: 20px;">
+    <p>Do you have an account? Please login</p>
+    <form>
+      <!-- Add login form fields here -->
+      <button type="submit" style="background-color: #008080; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; font-weight: bold;">Login</button>
+    </form>
+  </div>
+
+  <footer style="background-color: green; color: white; text-align: center; padding: 10px;">
+    <p>&copy; 2023 Kigali Accommodation Center. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

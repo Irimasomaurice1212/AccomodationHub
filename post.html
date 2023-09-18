@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Post - Kigali Accommodation Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: black;
+      overflow: hidden;
+    }
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .navbar li {
+      margin: 0;
+      padding: 0;
+    }
+    .navbar a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .navbar a:hover {
+      background-color: #333;
+    }
+    .content {
+      padding: 20px;
+    }
+    .form-container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .form-container input[type="text"],
+    .form-container input[type="number"],
+    .form-container input[type="file"],
+    .form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+    .form-container button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="post.html">Post</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="form-container">
+      <h1>Create a New Accommodation Post</h1>
+      <form action="#" method="POST" enctype="multipart/form-data">
+        <label for="details">Please enter accommodation details:</label><br>
+        <textarea id="details" name="details" rows="4"></textarea><br>
+        
+        <label for="location">Enter location:</label><br>
+        <input type="text" id="location" name="location"><br>
+
+        <label for="rooms">Rooms available:</label><br>
+        <input type="number" id="rooms" name="rooms"><br>
+
+        <label for="money">Enter money:</label><br>
+        <input type="text" id="money" name="money"><br>
+
+        <label for="images">Upload images:</label><br>
+        <input type="file" id="images" name="images" accept="image/*"><br>
+
+        <button type="submit">Post</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
